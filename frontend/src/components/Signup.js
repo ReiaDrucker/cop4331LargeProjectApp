@@ -48,13 +48,19 @@ function Signup() {
       // verify returned token
       var res = jwt.verify(JSON.parse(await response.text()).token, ePassword);
 
-      // debug
-      alert(res);
+      var adminList = res.Results;
+      var adminExists = false;
 
-      var adminList = res;
+      for(var i = 0; i < adminList.length; i++){
+        if(adminList[i].userName === admin.value)
+        {
+          adminExists = true;
+          break;
+        }
+      }
 
       // admin does not exist
-      if(!adminList.includes(admin.value))
+      if(!adminExists)
       {
         setMessage("That admin does not exist");
         return;
