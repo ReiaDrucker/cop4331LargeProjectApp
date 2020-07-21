@@ -24,7 +24,7 @@ function MakeTripPanel() {
 
 
         var js = '{"userName":"' 
-        + userName.value 
+        + userName 
         + '","startLocation":"' 
         + startLocation.value 
         + '","destination":"' 
