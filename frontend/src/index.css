@@ -46,6 +46,7 @@ body {
       margin-bottom: 2%;
       border-radius: 20px;
       margin: auto;
+      padding: 2%;
   }
   
   /* trips - the part of the trip that you click to expand*/
@@ -535,6 +536,7 @@ body {
   {
       font-size: 20px;
       width: 80%;
+      height: 50%;
       margin: auto;
       padding: 2%;
       border-radius: 25px;
@@ -557,7 +559,7 @@ body {
         display: inline-block;
         width: 40%;
         margin: auto;
-        float: left;
+        /*float: left;*/
     }
   
      /* Trips button on top of panel page*/
@@ -565,7 +567,7 @@ body {
         display: inline-block;
         width: 40%;
         margin: auto;
-        float: right;
+        /*float: right;*/
     }
   
   body
