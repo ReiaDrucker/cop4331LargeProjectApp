@@ -236,7 +236,7 @@ app.get('/api/Reset', async(req, res, next) =>{
 	var user = await account.db.update("Users", login, change);
 	var admin = await account.db.update("Admins", login, change);
 // 	account.db.sendjson(res, {Results: 'Password Changed!',error:''});
-	res.redirect('https://cop4331-g25.herokuapp.com');
+	res.redirect('https://cop4331-g25-app.herokuapp.com/');
 });
 
 // {
