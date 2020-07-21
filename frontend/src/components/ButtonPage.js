@@ -35,9 +35,9 @@ const gotoForgotPW = event => {
 
 return (
     <div id="buttonsDiv">
-        <button type="button" id="sGoToLogin" class="buttons" onClick={goToLogin}> Login </button><br />
-        <button type="button" id="sGoToSignup" class="buttons" onClick={goToSignup}> Signup </button><br />
-        <button type="button" id="sGoToForgotPW" class="buttons" onClick={goToForgotPW}> Forgot Password </button>
+        <button type="button" id="sGoToLogin" class="buttons" onClick={gotoLogin}> Login </button><br />
+        <button type="button" id="sGoToSignup" class="buttons" onClick={gotoSignup}> Signup </button><br />
+        <button type="button" id="sGoToForgotPW" class="buttons" onClick={gotoForgotPW}> Forgot Password </button>
     </div>
 
 );
