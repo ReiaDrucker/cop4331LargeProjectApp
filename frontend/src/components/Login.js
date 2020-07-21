@@ -60,22 +60,12 @@ function Login() {
 
   }
 
-  // swap to signup
-  const gotoSignup = event => {
-    event.preventDefault();
-
-    document.getElementById("loginDiv").style.display = "none";
-    document.getElementById("signupDiv").style.display = "block";
-    document.getElementById("ForgotDiv").style.display = "none";
-  }
-
   // swap to forgot password page
-  const gotoForgot = event => {
+  const gotoButtons = event => {
     event.preventDefault();
 
     document.getElementById("loginDiv").style.display = "none";
-    document.getElementById("signupDiv").style.display = "none";
-    document.getElementById("ForgotDiv").style.display = "block";
+    document.getElementById("buttonsDiv").style.display = "block";
   }
 
 
@@ -86,8 +76,7 @@ function Login() {
         <input type="text" id="loginName" placeholder="Username" ref={(c) => loginName = c} /><br />
         <input type="password" id="loginPassword" placeholder="Password" ref={(c) => loginPassword = c} /><br />
         <button type="button" id="loginButton" class="buttons" onClick={doLogin}> Login </button> <br />
-        <button type="button" id="switchToSignup" class="buttons" onClick={gotoSignup}>Make Account</button> <br />
-        <button type="button" id="switchToForgot" class="buttons" onClick={gotoForgot}>Forgot My Password</button>
+        <button type="button" id="switchToSignup" class="buttons" onClick={gotoButtons}>Cancel</button> <br />
 
       </form>
       <span id="loginResult">{message}</span>

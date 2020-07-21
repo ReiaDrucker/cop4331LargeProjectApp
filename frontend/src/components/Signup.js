@@ -115,10 +115,10 @@ function Signup() {
   }
 
   // swap to login
-  const gotoLogin = event => {
+  const gotoButtons = event => {
     event.preventDefault();
 
-    document.getElementById("loginDiv").style.display = "block";
+    document.getElementById("buttonsDiv").style.display = "block";
     document.getElementById("signupDiv").style.display = "none";
   }
 
@@ -135,7 +135,7 @@ function Signup() {
         <input type="password" id="signupPasswordConfirm" placeholder="Confirm Password" ref={(c) => passwordConfirm = c} /><br />
         <input type="text" id="signupAdminUsername" placeholder="Admin's Username" ref={(c) => admin = c} /><br />
         <button type="button" id="signupButton" class="buttons" onClick={doSignup}> Register </button> <br />
-        <button type="button" id="switchToLogin" class="buttons" onClick={gotoLogin}>Back to login</button>
+        <button type="button" id="switchToLogin" class="buttons" onClick={gotoButtons}>Cancel</button>
       </form>
       <span id="signupResult">{message}</span>
     </div>

@@ -5,6 +5,7 @@ import PageTitle from '../components/PageTitle';
 import Login from '../components/Login';
 import Signup from '../components/Signup';
 import ForgotPW from '../components/ForgotPW';
+import ButtonPage from '../components/ButtonPage';
 
 const LoginPage = () =>
 {
@@ -15,6 +16,7 @@ const LoginPage = () =>
         <Login />
         <Signup />
         <ForgotPW />
+        <ButtonPage />
       </div>
     );
 };

@@ -66,11 +66,10 @@ function ForgotPW() {
   }
 
   // swap to login page
-  const gotoLogin = event => {
+  const gotoButtons = event => {
     event.preventDefault();
 
-    document.getElementById("loginDiv").style.display = "block";
-    document.getElementById("signupDiv").style.display = "none";
+    document.getElementById("buttonsDiv").style.display = "block";
     document.getElementById("ForgotDiv").style.display = "none";
   }
 
@@ -83,7 +82,7 @@ function ForgotPW() {
         <input type="password" id="forgotPW" placeholder="New Password" ref={(c) => password = c} /><br />
         <input type="password" id="forgotPWConfirm" placeholder="Confirm New Password" ref={(c) => passwordConf = c} /><br />
         <button type="button" id="forgotRecover" class="buttons" onClick={doForgotPW}> Recover Password </button> <br />
-        <button type="button" id="forgotToLogin" class="buttons" onClick={gotoLogin}>Return to Login</button> <br />
+        <button type="button" id="forgotToLogin" class="buttons" onClick={gotoButtons}>Cancel</button> <br />
 
       </form>
       <span id="ForgotResult">{message}</span>
