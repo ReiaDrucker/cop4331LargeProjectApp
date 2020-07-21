@@ -198,8 +198,7 @@ body {
   /* Active - Button to initiate search */
   #searchActButton{
       float: right;
-      min-width: 20px;
-      width: 10%;
+      width: 20%;
       height: 50px;
       margin-left: 2%;
       margin-right: 15%;
@@ -281,7 +280,8 @@ body {
   
   /* All - holds the trips list */
   #AllTripListDiv{
-      width: 50%;
+      width: 80%;
+      height: 100%;
       margin-left: 10%;
       overflow: auto;
   }
