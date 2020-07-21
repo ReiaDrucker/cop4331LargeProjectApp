@@ -77,10 +77,10 @@ body {
       transition: max-height 0.1s ease-out;
       background-color: rgb(131, 131, 131);
     font-family: 'Ubuntu', sans-serif;
-    font-size: 28px;
+    font-size: 25px;
     color: #000000;
     border-radius: 25px;
-    width: 97%;
+    width: 80%;
   } 
   
   .subButton
