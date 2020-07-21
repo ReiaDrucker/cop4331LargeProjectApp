@@ -40,7 +40,7 @@ body {
   #NavBarHolder
   {
       align-content: center;
-      height: 45%;
+      height: 80%;
       width: 80%;
       background-color: rgb(104, 104, 104);
       margin-bottom: 2%;
@@ -534,9 +534,8 @@ body {
   #loggedInDiv
   {
       font-size: 20px;
-      width: 50%;
-      margin-top: 2%;
-      margin-left: 5%;
+      width: 80%;
+      margin: auto;
       padding: 10px;
       border-radius: 25px;
       background-color: rgba(255, 255, 255, 0.64);
@@ -545,20 +544,18 @@ body {
     /* Trips Username displayed after login up top*/
     #userName{
         display: inline-block;
-        width: 50%;
-        margin-left: 5%;
+        width: 80%;
+        margin: auto;
         /*text-align: center;*/
         font-family: 'Ubuntu', sans-serif;
         color: #000000;
-        padding: 0px;
         /*float: inline-start;*/
     }
     
      /* Trips button on top of panel page*/
     #logoutButton{
         display: inline-block;
-        padding: 0px;
-        width: 5%;
+        width: 40%;
         min-width: 160px;
         /*margin-left: 80%;*/
         /*margin-right: 5%;*/
@@ -569,7 +566,7 @@ body {
      /* Trips button on top of panel page*/
     #makeTripButton{
         display: inline-block;
-        width: 5%;
+        width: 40%;
         min-width: 160px;
         margin-left: 20%;
     }
