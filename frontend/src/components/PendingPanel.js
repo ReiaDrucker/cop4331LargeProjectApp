@@ -44,7 +44,7 @@ function PendingPanel() {
             var tokenJSON = '{"token":"' + token + '"}';
 
             // build and send JSON
-            let response = await fetch(BASE_URL + 'api/listTripsByAdmin',
+            let response = await fetch(BASE_URL + 'api/listTripsByUser',
                 { method: 'POST', body: tokenJSON, headers: { 'Content-Type': 'application/json' } });
 
             res = jwt.verify(JSON.parse(await response.text()).token, ePassword);
@@ -163,7 +163,7 @@ function PendingPanel() {
             var tokenJSON = '{"token":"' + token + '"}';
 
             // build and send JSON
-            let response = await fetch(BASE_URL + 'api/listTripsByAdmin',
+            let response = await fetch(BASE_URL + 'api/listTripsByUser',
                 { method: 'POST', body: tokenJSON, headers: { 'Content-Type': 'application/json' } });
 
             res = jwt.verify(JSON.parse(await response.text()).token, ePassword);
