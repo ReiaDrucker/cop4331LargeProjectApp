@@ -109,10 +109,12 @@ body {
   /* Active - textfield for search */
   #searchActText
   {
-      width: 60%;
+      width: 55%;
       height: 50px;
-      font-size: 30px;
+      font-size: 24px;
       border-radius: 25px;
+      margin-left: 20%;
+      margin-right: 5%;
   }
 
   /* Denied - textfield for search */
@@ -195,10 +197,11 @@ body {
   
   /* Active - Button to initiate search */
   #searchActButton{
-      width: 20%;
+      width: 15%;
       height: 50px;
       text-align: center;
       font-size: 24px;
+      border-radius: 25px;
   }
   
   /* Denied - Button to initiate search */
