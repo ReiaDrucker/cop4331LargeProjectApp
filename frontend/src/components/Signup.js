@@ -99,7 +99,7 @@ function Signup() {
         setMessage(res.error);
       }
       else {
-        var user = { firstName: firstName.value, lastName: lastName.value, id: res.id, userName: userName.value, admin: admin.value }
+        var user = { firstName: firstName.value, lastName: lastName.value, id: res.id, userName: userName.value }
         localStorage.setItem('user_data', JSON.stringify(user));
 
         document.getElementById('loginResult').innerHTML = "Account made, please check your email for verification";

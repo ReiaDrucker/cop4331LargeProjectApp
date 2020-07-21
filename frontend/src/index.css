@@ -476,6 +476,13 @@ body {
   {
 
   }
+
+  #makeTripPanel
+  {
+      display: none;
+      align-content: center;
+      text-align: center;
+  }
   
   #loginDiv
   {
@@ -666,6 +673,26 @@ body {
   {
       font-size: 30px;
   }
+  #tripStartLoc
+  {
+      font-size: 30px;
+  }
+  #tripDestination
+  {
+      font-size: 30px;
+  }
+  #tripStartTime
+  {
+      font-size: 30px;
+  }
+  #tripPurpose
+  {
+      font-size: 30px;
+  }
+  #tripWeather
+  {
+      font-size: 30px;
+  }
   
   #signupButton
   {
@@ -747,7 +774,7 @@ body {
       /*float: inline-end;*/
   }
 
-  #profileButton{
+  #makeTripButton{
       display: inline-block;
       width: 5%;
       min-width: 160px;
