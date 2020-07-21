@@ -27,7 +27,7 @@ body {
   .topnav
   {
   	overflow: visible;
-      	display: grid;
+    display: grid;
   	grid-template: auto / auto auto;
   	grid-gap: 2% 0.5%;
   	padding: 0.5% 0.5%;
@@ -166,9 +166,8 @@ body {
       border-left-color: rgb(13, 13, 46);
       color: white;
       font-size: 20px;
-      width: 30%;
-      margin-left: 5%;
-      margin-right: 5%;
+      width: 20%;
+      margin: auto;
       font-family: 'Ubuntu', sans-serif;
       min-width: 150px;
       min-height: 70px;
