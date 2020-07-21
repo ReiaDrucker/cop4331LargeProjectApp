@@ -8,7 +8,7 @@ import ActivePanel from '../components/ActivePanel';
 // import FinishedPanel from '../components/FinishedPanel';
 import DeniedPanel from '../components/DeniedPanel';
 import AllPanel from '../components/AllPanel';
-import makeTripPanel from '../components/makeTripPanel';
+import MakeTripPanel from '../components/MakeTripPanel';
 
 const CardPage = () =>
 {
@@ -22,7 +22,7 @@ const CardPage = () =>
             {/* <FinishedPanel /> */}
             <DeniedPanel />
             <AllPanel />
-            <makeTripPanel />
+            <MakeTripPanel />
         </div>
     );
 }

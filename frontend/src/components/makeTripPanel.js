@@ -4,14 +4,16 @@ var jwt = require('jsonwebtoken');
 
 const BASE_URL = 'https://cop4331-g25-app.herokuapp.com/';
 
-function makeTripPanel() {
+function MakeTripPanel() {
 
     var startLocation;
     var destination;
     var purpose;
     var weather;
     var startTime;
-
+    
+    var _ud = localStorage.getItem('user_data');
+    var ud = JSON.parse(_ud);
     var userName = ud.userName;
 
     //  password for token encryption
@@ -92,4 +94,4 @@ function makeTripPanel() {
     );
 };
 
-export default makeTripPanel;
+export default MakeTripPanel;
