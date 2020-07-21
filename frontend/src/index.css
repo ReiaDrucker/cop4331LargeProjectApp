@@ -26,14 +26,14 @@ body {
   /* trips */
   .topnav
   {
-      overflow: visible;
-      
-      display: grid;
-      grid-gap: 8%;
-      margin: auto;
-      grid-template-columns: repeat(4, [cols-start] 20% [cols-end]);
-      width: 50%;
-      margin-left: 45%;
+  	overflow: visible;
+      	display: grid;
+  	grid-template: auto / auto auto;
+  	grid-gap: 2% 0.5%;
+  	background-color: #2196F3;
+  	padding: 0.5% 0.5%;
+  	width: 80%;
+  	margin: auto;
   }
    /* trips - .topNav (which is the class that defines id:NavBar) is contained within this div */
   #NavBarHolder
