@@ -25,24 +25,23 @@ body {
   /* Navigation bar styling */
   .topnav
   {
-      overflow: hidden;
+      overflow: visible;
       
       display: grid;
       grid-gap: 8%;
       margin: auto;
-      grid-template-columns: repeat(4, [col-start] 20% [col-end]);
+      grid-template-rows: repeat(4, [row-start] 20% [row-end]);
       width: 100%;
-      margin-left: 5%;
+      margin-left: 45%;
   }
   
   #NavBarHolder
   {
-      height: 15%;
-      min-height: 50px;
+      align-content: center;
+      height: 25%;
+      min-height: 75px;
       width: 90%;
       background-color: rgb(104, 104, 104);
-      margin-left: 5%;
-      margin-right: 5%;
       margin-bottom: 2%;
       border-radius: 20px;
   }
