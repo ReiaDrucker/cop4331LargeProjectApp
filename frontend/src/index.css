@@ -109,7 +109,6 @@ body {
   /* Active - textfield for search */
   #searchActText
   {
-      float: left;
       width: 60%;
       height: 50px;
       font-size: 30px;
@@ -196,7 +195,6 @@ body {
   
   /* Active - Button to initiate search */
   #searchActButton{
-      float: right;
       width: 20%;
       height: 50px;
       text-align: center;
