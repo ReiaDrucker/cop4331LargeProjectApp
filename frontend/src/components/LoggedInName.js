@@ -34,9 +34,9 @@ function LoggedInName() {
 
   return (
     <div id="loggedInDiv">
-    <button type="button" id="logoutButton" class="buttons" onClick={doLogout}> Log Out </button>
       <span id="userName">Logged In As {firstName} {lastName}</span>
       <button type="button" id="makeTripButton" class="buttons" onClick={goToMakeTrip}> Make Trip </button>
+      <button type="button" id="logoutButton" class="buttons" onClick={doLogout}> Log Out </button>
     </div>
   );
 

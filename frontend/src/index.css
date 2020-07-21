@@ -541,6 +541,38 @@ body {
       border-radius: 25px;
       background-color: rgba(255, 255, 255, 0.64);
   }
+
+    /* Trips Username displayed after login up top*/
+    #userName{
+        display: inline-block;
+        width: 50%;
+        margin-left: 5%;
+        /*text-align: center;*/
+        font-family: 'Ubuntu', sans-serif;
+        color: #000000;
+        padding: 0px;
+        /*float: inline-start;*/
+    }
+    
+     /* Trips button on top of panel page*/
+    #logoutButton{
+        display: inline-block;
+        padding: 0px;
+        width: 5%;
+        min-width: 160px;
+        /*margin-left: 80%;*/
+        /*margin-right: 5%;*/
+        margin-left: 25%;
+        /*float: inline-end;*/
+    }
+  
+     /* Trips button on top of panel page*/
+    #makeTripButton{
+        display: inline-block;
+        width: 5%;
+        min-width: 160px;
+        margin-left: 20%;
+    }
   
   body
   {
@@ -806,39 +838,7 @@ body {
       font-family: 'Ubuntu', sans-serif;
       color: #95060a;
   }
-  
-  /* Trips */
-  #userName{
-      display: inline-block;
-      width: 50%;
-      margin-left: 5%;
-      /*text-align: center;*/
-      font-family: 'Ubuntu', sans-serif;
-      color: #000000;
-      padding: 0px;
-      /*float: inline-start;*/
-  }
-  
-   /* Trips */
-  #logoutButton{
-      display: inline-block;
-      padding: 0px;
-      width: 5%;
-      min-width: 160px;
-      /*margin-left: 80%;*/
-      /*margin-right: 5%;*/
-      margin-left: 25%;
-      /*float: inline-end;*/
-  }
 
-   /* Trips */
-  #makeTripButton{
-      display: inline-block;
-      width: 5%;
-      min-width: 160px;
-      margin-left: 20%;
-  }
-  
   #DEBUG
   {
       color: white;
