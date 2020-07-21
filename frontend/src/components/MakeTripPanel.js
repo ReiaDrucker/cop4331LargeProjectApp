@@ -38,8 +38,6 @@ function MakeTripPanel() {
 
 
         try {
-            // DEBUG
-            alert(js);
 
             var token = jwt.sign(js, ePassword);
 
