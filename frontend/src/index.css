@@ -144,6 +144,7 @@ body {
       margin-left: auto;
       margin-right: auto;
       font-family: 'Ubuntu', sans-serif;
+      min-width: 100px;
   }
   
   .buttons:hover
@@ -487,7 +488,12 @@ body {
   #buttonsDiv
   {
       align-items: center;
+      text-align: center;
       display: block;
+      font-family: 'Ubuntu', sans-serif;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
   }
   
   #loginDiv
@@ -504,7 +510,7 @@ body {
       margin-right: auto;
       padding: 25px;
       border-radius: 7px;
-      display: block;
+      display: none;
   }
   
   
@@ -710,6 +716,8 @@ body {
   #sGoToLogin
   {
     width: 60%;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin-top: 2%;
     align-self: center;
     font-size: 30px;
