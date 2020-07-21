@@ -127,30 +127,6 @@ function PendingPanel() {
                 contentDiv.appendChild(departTimeP);
                 contentDiv.appendChild(reasonP);
 
-                // add respond button to get to deny / accept panel                
-                var resButton = document.createElement("button");
-                resButton.type = "button";
-                resButton.id = ID;
-                resButton.className = "buttons";
-                resButton.innerHTML = "Respond to request";
-                resButton.addEventListener("click", function (e) {
-                    // save id of trip to edit
-                    var idInfo = { idToEdit: e.currentTarget.id, uID: userIDNUM, aID: adminIDNUM }  // TODO - SHOULD BE TEMP (uID and aID)
-                    // alert(JSON.stringify(idInfo));
-                    localStorage.setItem('trip_edit_data', JSON.stringify(idInfo));
-
-                    // swap view to respond panel
-                    document.getElementById("RespondPanel").style.display = "block";
-                    document.getElementById("PendingPanel").style.display = "none";
-
-                    // hide navbar
-                    document.getElementById("NavWrapper").style.display = "none";
-                });
-
-                // add respond button to content div
-                contentDiv.appendChild(document.createElement("br"));
-                contentDiv.appendChild(resButton);
-
                 // add collButton and contentDiv to TripList
                 document.getElementById("PenTripList").appendChild(collButton);
                 document.getElementById("PenTripList").appendChild(contentDiv);
