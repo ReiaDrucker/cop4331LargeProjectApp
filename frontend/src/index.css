@@ -718,7 +718,7 @@ body {
     width: 60%;
     padding-top: 15px;
     padding-bottom: 15px;
-    margin-top: 2%;
+    margin-top: 1%;
     align-self: center;
     font-size: 30px;
   }
@@ -726,7 +726,9 @@ body {
   #sGoToSignup
   {
     width: 60%;
-    margin-top: 2%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 5%;
     align-self: center;
     font-size: 30px;
   }
@@ -734,7 +736,9 @@ body {
   #sGoToForgotPW
   {
     width: 60%;
-    margin-top: 2%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 5%;
     align-self: center;
     font-size: 30px;
   }
