@@ -23,6 +23,7 @@ body {
   }
   
   /* Navigation bar styling */
+  /* trips */
   .topnav
   {
       overflow: visible;
@@ -30,11 +31,11 @@ body {
       display: grid;
       grid-gap: 8%;
       margin: auto;
-      grid-template-rows: repeat(4, [row-start] 20% [row-end]);
+      grid-template-columns: repeat(4, [cols-start] 20% [cols-end]);
       width: 50%;
       margin-left: 45%;
   }
-  
+   /* trips - .topNav (which is the class that defines id:NavBar) is contained within this div */
   #NavBarHolder
   {
       align-content: center;
@@ -46,6 +47,7 @@ body {
       border-radius: 20px;
   }
   
+  /* trips - the part of the trip that you click to expand*/
   .collapsible {
       background-color: rgb(201, 200, 200);
       color: #000000;
@@ -60,10 +62,12 @@ body {
     border-radius: 25px;
   }
   
+  /* trips */
   .active, .collapsible:hover {
      background-color: #E3E3E3;
   }
   
+  /* trips - the part of the trip that appears / disappears on click of .collapsible*/
   .content {
     padding: 0 18px;
       max-height: 0;
@@ -88,6 +92,7 @@ body {
       font-family: 'Ubuntu', sans-serif;
   }
   
+  /* Pending - textfield for search */
   #searchPenText
   {
       float: left;
@@ -98,6 +103,8 @@ body {
       font-size: 30px;
       border-radius: 25px;
   }
+
+  /* Active - textfield for search */
   #searchActText
   {
       float: left;
@@ -107,6 +114,8 @@ body {
       font-size: 30px;
       border-radius: 25px;
   }
+
+  /* Denied - textfield for search */
   #searchDenText
   {
       float: left;
@@ -116,15 +125,8 @@ body {
       font-size: 30px;
       border-radius: 25px;
   }
-  /* #searchFinText
-  {
-      float: left;
-      width: 60%;
-      margin-left: 10%;
-      height: 50px;
-      font-size: 30px;
-      border-radius: 25px;
-  } */
+
+  /* All - textfield for search */
   #searchAllText
   {
       float: left;
@@ -135,6 +137,7 @@ body {
       border-radius: 25px;
   }
   
+  /* Trips - class used by most all buttons, if a button's id also has a CSS style then that overrides any conflicts with this */
   .buttons
   {
       background-color: white;
@@ -147,6 +150,7 @@ body {
       min-width: 100px;
   }
   
+  /* Trips */
   .buttons:hover
   {
       background-color: #00aaaa;
@@ -154,6 +158,7 @@ body {
       min-width: 100px;
   }
   
+  /* Trips - the actual buttons inside of the NavBar (inside of the NavBarHolder)*/
   .navButtons
   {
       background-color: transparent;
@@ -169,6 +174,7 @@ body {
       min-height: 70px;
   }
   
+  /* Trips */
   .navButtons:hover
   {
       background-color: #002b2b;
@@ -176,6 +182,7 @@ body {
       /*min-width: 100px;*/
   }
   
+  /* Pending - Button to initiate search */
   #searchPenButton{
       float: right;
       min-width: 20px;
@@ -187,6 +194,7 @@ body {
       font-size: 24px;
   }
   
+  /* Active - Button to initiate search */
   #searchActButton{
       float: right;
       min-width: 20px;
@@ -198,17 +206,7 @@ body {
       font-size: 24px;
   }
   
-  /* #searchFinButton{
-      float: right;
-      min-width: 20px;
-      width: 10%;
-      height: 50px;
-      margin-left: 2%;
-      margin-right: 15%;
-      text-align: center;
-      font-size: 24px;
-  } */
-  
+  /* Denied - Button to initiate search */
   #searchDenButton{
       float: right;
       min-width: 20px;
@@ -220,6 +218,7 @@ body {
       font-size: 24px;
   }
   
+  /* All - Button to initiate search */
   #searchAllButton{
       float: right;
       min-width: 20px;
@@ -231,6 +230,7 @@ body {
       font-size: 20px;
   }
   
+  /* Pending - holds the trips */
   #PenTripList{
       width: 100%;
       max-height: 60vh;
@@ -239,6 +239,7 @@ body {
       margin-bottom: 0;
   }
   
+  /* Pending - holds the trips */
   #ActTripList{
       width: 100%;
       max-height: 60vh;
@@ -247,14 +248,7 @@ body {
       margin-bottom: 0;
   }
   
-  /* #FinTripList{
-      width: 100%;
-      max-height: 60vh;
-      overflow: auto;
-      padding-bottom: 0;
-      margin-bottom: 0;
-  } */
-  
+  /* Pending - holds the trips */
   #DenTripList{
       width: 100%;
       max-height: 60vh;
@@ -263,6 +257,7 @@ body {
       margin-bottom: 0;
   }
   
+  /* Pending - holds the trips */
   #AllTripList{
       width: 50%;
       max-height: 60vh;
@@ -271,6 +266,7 @@ body {
       margin-bottom: 0;
   }
   
+  /* Pending - holds the trips list */
   #PenTripListDiv{
       width: 80%;
       height: 100%;
@@ -278,6 +274,7 @@ body {
       overflow: auto;
   }
   
+  /* Active - holds the trips list */
   #ActTripListDiv{
       width: 80%;
       height: 100%;
@@ -285,13 +282,7 @@ body {
       overflow: auto;
   }
   
-  /* #FinTripListDiv{
-      width: 80%;
-      height: 100%;
-      margin-left: 10%;
-      overflow: auto;
-  } */
-  
+  /* Denied - holds the trips list */
   #DenTripListDiv{
       width: 80%;
       height: 100%;
@@ -299,42 +290,44 @@ body {
       overflow: auto;
   }
   
+  /* All - holds the trips list */
   #AllTripListDiv{
       width: 50%;
       margin-left: 10%;
       overflow: auto;
   }
   
+  /* Pending - holds search bar and TripListDiv */
   #PendingPanel
   {
       display: block;
   }
   
+  /* Active - holds search bar and TripListDiv */
   #ActivePanel
   {
       display: none;
   }
   
-  /* #FinishedPanel
-  {
-      display: none;
-  } */
-  
+  /* Denied - holds search bar and TripListDiv */
   #DeniedPanel
   {
       display: none;
   }
   
+  /* All - holds search bar and TripListDiv */
   #AllPanel
   {
       display: none;
   }
   
+  /* Not used */
   #RespondPanel
   {
       display: none;
   }
   
+  /* Not used */
   #ProfilePanel
   {
       display: none;
@@ -342,6 +335,7 @@ body {
       text-align: center;
   }
   
+  /* Not used */
   #resAppLabel
   {
       margin-right: 35%;
@@ -350,12 +344,14 @@ body {
       color: white;
   }
   
+  /* Not used */
   #RespondPanel
   {
       align-content: center;
       text-align: center;
   }
   
+  /* Not used */
   #resDenLabel
   {
       margin-right: 35%;
@@ -364,6 +360,7 @@ body {
       color: white;
   }
   
+  /* Make Trip */
   #res-inner-title
   {
       font-size: 22pt;
@@ -372,12 +369,14 @@ body {
       padding-bottom: 8px;
   }
   
+  /* Not used */
   .radio
   {
       margin-right: 20%;
       padding-bottom: 5px;
   }
   
+  /* Make Trip - submit button */
   #resSubmit
   {
       padding-bottom: 3px;
@@ -391,6 +390,7 @@ body {
       padding-bottom: 8px;
   }
   
+  /* Not used */
   #resReason
   {
       width: 60%;
@@ -400,6 +400,7 @@ body {
       border-radius: 25px;
   }
   
+  /* Trips */
   #title
   {
       font-size: 60px;
@@ -411,18 +412,12 @@ body {
       padding: 0;
   }
   
+  /* Trips */
   #subTitle
   {
       color: white;
       font-size: 30px;
       text-align: center;
-  }
-  
-  #Creators
-  {
-      font-family: 'Ubuntu', sans-serif;
-      text-align: center;
-      color: white;
   }
   
   #Class
@@ -431,11 +426,6 @@ body {
       text-align: center;
       color: white;
   }
-  
-  /* #outer
-  {
-  
-  } */
   
   #LAMP
   {
@@ -468,16 +458,7 @@ body {
       height: 90%;
   }
 
-  #TitleDiv
-  {
-
-  }
-
-  #NavWrapper
-  {
-
-  }
-
+  /* Make Trip */
   #makeTripPanel
   {
       display: none;
@@ -485,6 +466,7 @@ body {
       text-align: center;
   }
 
+  /* Initial Page */
   #buttonsDiv
   {
       align-items: center;
@@ -496,6 +478,7 @@ body {
       width: 100%;
   }
   
+  /* Login */
   #loginDiv
   {
       background: Transparent;
@@ -513,7 +496,7 @@ body {
       display: none;
   }
   
-  
+  /* Signup */
   #signupDiv
   {
       background: Transparent;
@@ -530,6 +513,7 @@ body {
       display: none;
   }
 
+  /* Forgot Password */
   #ForgotDiv
   {
     align-items: center;
@@ -546,6 +530,7 @@ body {
       display: none;
   }
   
+  /* Trips */
   #loggedInDiv
   {
       font-size: 20px;
@@ -568,28 +553,33 @@ body {
       height: 70%;
   }
   
+
   #inner-title
   {
       color: white;
   }
   
+  /* Login */
   #switchToSignup
   {
     margin-top: .5%;
     font-size: 20px;
   }
   
+  /* Login */
   #loginButton
   {
       font-size: 20px;
   }
 
+  /* Not used */
   #forgotRecover
   {
     margin-top: .5%;
     font-size: 15px;
   }
 
+  /* Forgot PW */
   #forgotToLogin
   {
     font-size: 20px;
@@ -601,21 +591,25 @@ body {
       color: black;
   }
 
+  /* Forgot PW */
   #forgotUsername
   {
       font-size: 20px;
   }
 
+  /* Forgot PW */
   #forgotPW
   {
       font-size: 20px;
   }
 
+  /* Forgot PW */
   #forgotPWConfirm
   {
       font-size: 20px;
   }
   
+  /* Signup */
   #switchToLogin
   {
       font-size: 20px;
@@ -623,40 +617,48 @@ body {
       align-items: center;
   }
 
+  /* Not used */
   #switchToForgot
   {
     font-size: 20px;
     margin-top: .5%;
   }
   
+  /* Login */
   #loginName
   {
       font-size: 30px;
       color: black;
   }
+
+  /* Login */
   #loginPassword
   {
       font-size: 30px;
       color: black;
   }
   
+  /* Not used */
   #loginNameUpdate
   {
       font-size: 30px;
       color: black;
   }
   
+  /* Not used */
   #loginPasswordUpdate
   {
       font-size: 30px;
       color: black;
   }
 
+  /* Not used */
   #updateProfileButton
   {
       margin-bottom: 10px;
   }
   
+  /* Signup */
   #signupUsername
   {
       font-size: 25px;
@@ -685,6 +687,9 @@ body {
   {
       font-size: 25px;
   }
+
+
+  /* Make Trip */
   #tripStartLoc
   {
       font-size: 25px;
@@ -706,6 +711,8 @@ body {
       font-size: 25px;
   }
   
+
+  /* Signup */
   #signupButton
   {
       margin-top: 2%;
@@ -713,6 +720,7 @@ body {
       font-size: 20px;
   }
 
+    /* Button Page */
   #sGoToLogin
   {
     width: 60%;
@@ -723,6 +731,7 @@ body {
     font-size: 30px;
   }
 
+  /* Button Page */
   #sGoToSignup
   {
     width: 60%;
@@ -733,6 +742,7 @@ body {
     font-size: 30px;
   }
 
+  /* Button Page */
   #sGoToForgotPW
   {
     width: 60%;
@@ -764,6 +774,7 @@ body {
       color: #FFFFFF;
   }
   
+    /* Login */
   #loginResult{
       display: inline-block;
       font-size: 0.8em;
@@ -774,6 +785,7 @@ body {
       color: #95060a;
   }
 
+    /* Forgot PW */
   #ForgotResult{
     display: inline-block;
     font-size: 0.8em;
@@ -783,7 +795,8 @@ body {
     font-family: 'Ubuntu', sans-serif;
     color: #95060a;
   }
-  
+
+   /* Signup */
   #signupResult{
       display: inline-block;
       font-size: 0.8em;
@@ -794,6 +807,7 @@ body {
       color: #95060a;
   }
   
+  /* Trips */
   #userName{
       display: inline-block;
       width: 50%;
@@ -805,6 +819,7 @@ body {
       /*float: inline-start;*/
   }
   
+   /* Trips */
   #logoutButton{
       display: inline-block;
       padding: 0px;
@@ -816,6 +831,7 @@ body {
       /*float: inline-end;*/
   }
 
+   /* Trips */
   #makeTripButton{
       display: inline-block;
       width: 5%;
