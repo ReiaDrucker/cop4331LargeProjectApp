@@ -587,7 +587,7 @@ body {
   #forgotRecover
   {
     margin-top: .5%;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   #forgotToLogin
@@ -603,17 +603,17 @@ body {
 
   #forgotUsername
   {
-      font-size: 30px;
+      font-size: 20px;
   }
 
   #forgotPW
   {
-      font-size: 30px;
+      font-size: 20px;
   }
 
   #forgotPWConfirm
   {
-      font-size: 30px;
+      font-size: 20px;
   }
   
   #switchToLogin
