@@ -5,7 +5,7 @@ const sgMail = require("@sendgrid/mail");
 require('dotenv').config();
 const mail = require('./email');
 
-const BASE_URL = 'https://cop4331-g25.herokuapp.com/';
+const BASE_URL = 'https://cop4331-g25-app.herokuapp.com/';
 
 // const url = 'mongodb+srv://RickLeinecker:COP4331Rocks@cluster0-4pisv.mongodb.net/COP4331?retryWrites=true&w=majority';
 

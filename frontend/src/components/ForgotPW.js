@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 var jwt = require('jsonwebtoken');
 
-const BASE_URL = 'https://cop4331-g25.herokuapp.com/';
+const BASE_URL = 'https://cop4331-g25-app.herokuapp.com/';
 
 function ForgotPW() {
 

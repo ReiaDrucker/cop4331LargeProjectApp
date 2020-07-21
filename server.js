@@ -9,7 +9,7 @@ const path = require('path');
 const id = require('mongodb').ObjectId;
 const password = 'shhhhh';
 
-const base_url = 'https://cop4331-g25.herokuapp.com/';
+const base_url = 'https://cop4331-g25-app.herokuapp.com/';
 
 const app = express();
 app.use(cors());

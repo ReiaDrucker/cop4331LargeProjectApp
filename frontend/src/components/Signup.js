@@ -2,16 +2,17 @@
 import React, { useState } from 'react';
 var jwt = require('jsonwebtoken');
 
-const BASE_URL = 'https://cop4331-g25.herokuapp.com/';
+const BASE_URL = 'https://cop4331-g25-app.herokuapp.com/';
 
 function Signup() {
 
   var firstName;
   var lastName;
   var email;
-  var adminId;
+  var userName;
   var password;
   var passwordConfirm;
+  var admin;
 
   //  password for token encryption
   var ePassword = "shhhhh";
@@ -34,13 +35,38 @@ function Signup() {
       return;
     }
 
-    if (adminId.value == null || adminId.value == "") {
-      setMessage("Invalid admin ID");
+    if (userName.value == null || userName.value == "") {
+      setMessage("Invalid username");
+      return;
+    }
+
+    // check that admin is valid
+    try {
+      const response = await fetch(BASE_URL + 'api/listAdmins',
+        { method: 'POST' });
+
+      // verify returned token
+      var res = jwt.verify(JSON.parse(await response.text()).token, ePassword);
+
+      // debug
+      alert(res);
+
+      var adminList = res;
+
+      // admin does not exist
+      if(!adminList.includes(admin.value))
+      {
+        setMessage("That admin does not exist");
+        return;
+      }
+    }
+    catch (e) {
+      alert(e.toString());
       return;
     }
 
     var js = '{"userName":"'
-      + adminId.value
+      + userName.value
       + '","Password":"'
       + password.value
       + '","firstName":"'
@@ -48,14 +74,16 @@ function Signup() {
       + '","lastName":"'
       + lastName.value
       + '","email":"'
-      + email.value + '"}';
+      + email.value
+      + '","admin":"'
+      + admin.value + '"}';
 
     try {
       var token = jwt.sign(js, ePassword);
 
       var tokenJSON = '{"token":"' + token + '"}';
 
-      const response = await fetch(BASE_URL + 'api/registerAdmin',
+      const response = await fetch(BASE_URL + 'api/registerUser',
         { method: 'POST', body: tokenJSON, headers: { 'Content-Type': 'application/json' } });
 
       // verify returned token
@@ -65,11 +93,11 @@ function Signup() {
         setMessage(res.error);
       }
       else {
-        var user = { firstName: firstName.value, lastName: lastName.value, id: res.id, userName: adminId.value }
+        var user = { firstName: firstName.value, lastName: lastName.value, id: res.id, userName: userName.value, admin: admin.value }
         localStorage.setItem('user_data', JSON.stringify(user));
 
         document.getElementById('loginResult').innerHTML = "Account made, please check your email for verification";
-        
+
         document.getElementById("loginDiv").style.display = "block";
         document.getElementById("signupDiv").style.display = "none";
       }
@@ -96,9 +124,10 @@ function Signup() {
         <input type="text" id="signupFirstName" placeholder="First Name" ref={(c) => firstName = c} /><br />
         <input type="text" id="signupLastName" placeholder="Last Name" ref={(c) => lastName = c} /><br />
         <input type="text" id="signupEmail" placeholder="Email" ref={(c) => email = c} /><br />
-        <input type="text" id="signupUsername" placeholder="Admin Username" ref={(c) => adminId = c} /><br />
+        <input type="text" id="signupUsername" placeholder="Your Username" ref={(c) => userName = c} /><br />
         <input type="password" id="signupPassword" placeholder="Password" ref={(c) => password = c} /><br />
         <input type="password" id="signupPasswordConfirm" placeholder="Confirm Password" ref={(c) => passwordConfirm = c} /><br />
+        <input type="text" id="signupAdminUsername" placeholder="Admin's Username" ref={(c) => admin = c} /><br />
         <button type="button" id="signupButton" class="buttons" onClick={doSignup}> Register </button> <br />
         <button type="button" id="switchToLogin" class="buttons" onClick={gotoLogin}>Back to login</button>
       </form>

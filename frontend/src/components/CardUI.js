@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const BASE_URL = 'https://cop4331-g25.herokuapp.com/';
+const BASE_URL = 'https://cop4331-g25-app.herokuapp.com/';
 // admin is generally referred to as user (ex: user_data) and I'll be calling the users the admin oversees clients
 
 function CardUI()

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 var jwt = require('jsonwebtoken');
 
-const BASE_URL = 'https://cop4331-g25.herokuapp.com/';
+const BASE_URL = 'https://cop4331-g25-app.herokuapp.com/';
 
 function Login() {
 
@@ -28,7 +28,7 @@ function Login() {
 
       var tokenJSON = '{"token":"' + token + '"}';
 
-      const response = await fetch(BASE_URL + 'api/loginAdmin',
+      const response = await fetch(BASE_URL + 'api/loginUser',
         { method: 'POST', body: tokenJSON, headers: { 'Content-Type': 'application/json' } });
 
       // verify returned token
@@ -44,6 +44,9 @@ function Login() {
         }
 
         else {
+          // DEBUG
+          alert(res);
+
           var user = { firstName: res.firstName, lastName: res.lastName, id: res.id, userName: loginName.value }
           localStorage.setItem('user_data', JSON.stringify(user));
 
