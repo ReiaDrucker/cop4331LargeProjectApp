@@ -44,8 +44,6 @@ function Login() {
         }
 
         else {
-          // DEBUG
-          alert(response);
 
           var user = { firstName: res.firstName, lastName: res.lastName, id: res.id, userName: loginName.value }
           localStorage.setItem('user_data', JSON.stringify(user));
