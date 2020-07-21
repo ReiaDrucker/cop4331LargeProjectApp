@@ -31,7 +31,7 @@ body {
       grid-gap: 8%;
       margin: auto;
       grid-template-rows: repeat(4, [row-start] 20% [row-end]);
-      width: 100%;
+      width: 50%;
       margin-left: 45%;
   }
   
@@ -39,8 +39,8 @@ body {
   {
       align-content: center;
       height: 25%;
-      min-height: 75px;
-      width: 90%;
+      min-height: 80px;
+      width: 50%;
       background-color: rgb(104, 104, 104);
       margin-bottom: 2%;
       border-radius: 20px;
@@ -160,13 +160,13 @@ body {
       border-right-color: rgb(13, 13, 46);
       border-left-color: rgb(13, 13, 46);
       color: white;
-      font-size: 22px;
-      width: 20%;
+      font-size: 20px;
+      width: 30%;
       margin-left: 5%;
       margin-right: 5%;
       font-family: 'Ubuntu', sans-serif;
       min-width: 150px;
-      min-height: 50px;
+      min-height: 70px;
   }
   
   .navButtons:hover
@@ -548,8 +548,8 @@ body {
   
   #loggedInDiv
   {
-      font-size: 30px;
-      width: 90%;
+      font-size: 20px;
+      width: 50%;
       margin-top: 2%;
       margin-left: 5%;
       padding: 10px;
@@ -575,7 +575,7 @@ body {
   
   #switchToSignup
   {
-      margin-top: .5%;
+    margin-top: .5%;
     font-size: 20px;
   }
   
