@@ -55,7 +55,7 @@ body {
       color: #000000;
       cursor: pointer;
      padding: 2%;
-    width: 100%;
+    /*width: 100%;*/
     border: 1;
      text-align: center;
      outline: none;
@@ -80,7 +80,7 @@ body {
     font-size: 25px;
     color: #000000;
     border-radius: 25px;
-    width: 100%;
+    /*width: 100%;*/
   } 
   
   .subButton
@@ -242,7 +242,7 @@ body {
   
   /* Pending - holds the trips */
   #ActTripList{
-      width: 100%;
+      /*width: 100%;*/
       max-height: 60%;
       overflow: auto;
       padding-bottom: 0;
