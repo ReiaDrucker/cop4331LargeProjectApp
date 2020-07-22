@@ -13,7 +13,11 @@ function NavBar() {
         document.getElementById("DeniedPanel").style.display = "none";
         document.getElementById("AllPanel").style.display = "none";
 
-        window.location.reload();
+        // Reload all panels
+        document.getElementById("searchPenButton").click();
+        document.getElementById("searchActButton").click();
+        document.getElementById("searchDenButton").click();
+        document.getElementById("searchAllButton").click();
     }
 
     // swap panel to active trips
@@ -28,7 +32,11 @@ function NavBar() {
         document.getElementById("DeniedPanel").style.display = "none";
         document.getElementById("AllPanel").style.display = "none";
 
-        window.location.reload();
+        // Reload all panels
+        document.getElementById("searchPenButton").click();
+        document.getElementById("searchActButton").click();
+        document.getElementById("searchDenButton").click();
+        document.getElementById("searchAllButton").click();
     }
 
     // // swap panel to finished trips
@@ -56,7 +64,11 @@ function NavBar() {
         document.getElementById("DeniedPanel").style.display = "block";
         document.getElementById("AllPanel").style.display = "none";
 
-        window.location.reload();
+        // Reload all panels
+        document.getElementById("searchPenButton").click();
+        document.getElementById("searchActButton").click();
+        document.getElementById("searchDenButton").click();
+        document.getElementById("searchAllButton").click();
     }
 
     // swap panel to all trips
@@ -71,7 +83,11 @@ function NavBar() {
         document.getElementById("DeniedPanel").style.display = "none";
         document.getElementById("AllPanel").style.display = "block";
 
-        window.location.reload();
+        // Reload all panels
+        document.getElementById("searchPenButton").click();
+        document.getElementById("searchActButton").click();
+        document.getElementById("searchDenButton").click();
+        document.getElementById("searchAllButton").click();
     }
 
 
