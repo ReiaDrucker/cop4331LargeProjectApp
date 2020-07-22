@@ -97,13 +97,12 @@ body {
   /* Pending - textfield for search */
   #searchPenText
   {
-      float: left;
-      width: 60%;
-      margin-left: 10%;
-      margin-right: 0%;
-      height: 50px;
-      font-size: 30px;
-      border-radius: 25px;
+    width: 55%;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 25px;
+    margin-left: 10%;
+    margin-right: 1%;
   }
 
   /* Active - textfield for search */
@@ -120,23 +119,23 @@ body {
   /* Denied - textfield for search */
   #searchDenText
   {
-      float: left;
-      width: 60%;
-      margin-left: 10%;
-      height: 50px;
-      font-size: 30px;
-      border-radius: 25px;
+    width: 55%;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 25px;
+    margin-left: 10%;
+    margin-right: 1%;
   }
 
   /* All - textfield for search */
   #searchAllText
   {
-      float: left;
-      width: 30%;
-      margin-left: 10%;
-      height: 50px;
-      font-size: 30px;
-      border-radius: 25px;
+    width: 55%;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 25px;
+    margin-left: 10%;
+    margin-right: 1%;
   }
   
   /* Trips - class used by most all buttons, if a button's id also has a CSS style then that overrides any conflicts with this */
@@ -157,7 +156,6 @@ body {
   {
       background-color: #00aaaa;
       color: #FFFFFF;
-      min-width: 100px;
   }
   
   /* Trips - the actual buttons inside of the NavBar (inside of the NavBarHolder)*/
@@ -185,14 +183,11 @@ body {
   
   /* Pending - Button to initiate search */
   #searchPenButton{
-      float: right;
-      min-width: 20px;
-      width: 10%;
-      height: 50px;
-      margin-left: 2%;
-      margin-right: 15%;
-      text-align: center;
-      font-size: 24px;
+    width: 15%;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 25px;
   }
   
   /* Active - Button to initiate search */
@@ -206,26 +201,20 @@ body {
   
   /* Denied - Button to initiate search */
   #searchDenButton{
-      float: right;
-      min-width: 20px;
-      width: 10%;
-      height: 50px;
-      margin-left: 2%;
-      margin-right: 15%;
-      text-align: center;
-      font-size: 24px;
+    width: 15%;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 25px;
   }
   
   /* All - Button to initiate search */
   #searchAllButton{
-      float: right;
-      min-width: 20px;
-      width: 10%;
-      height: 50px;
-      margin-left: 2%;
-      margin-right: 15%;
-      text-align: center;
-      font-size: 20px;
+    width: 15%;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 25px;
   }
   
   /* Pending - holds the trips */
