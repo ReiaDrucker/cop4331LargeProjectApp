@@ -13,11 +13,8 @@ function NavBar() {
         document.getElementById("DeniedPanel").style.display = "none";
         document.getElementById("AllPanel").style.display = "none";
 
-        // Reload all panels
+        // Reload panels
         document.getElementById("searchPenButton").click();
-        document.getElementById("searchActButton").click();
-        document.getElementById("searchDenButton").click();
-        document.getElementById("searchAllButton").click();
     }
 
     // swap panel to active trips
@@ -32,11 +29,8 @@ function NavBar() {
         document.getElementById("DeniedPanel").style.display = "none";
         document.getElementById("AllPanel").style.display = "none";
 
-        // Reload all panels
-        document.getElementById("searchPenButton").click();
+        // Reload panels
         document.getElementById("searchActButton").click();
-        document.getElementById("searchDenButton").click();
-        document.getElementById("searchAllButton").click();
     }
 
     // // swap panel to finished trips
@@ -64,11 +58,8 @@ function NavBar() {
         document.getElementById("DeniedPanel").style.display = "block";
         document.getElementById("AllPanel").style.display = "none";
 
-        // Reload all panels
-        document.getElementById("searchPenButton").click();
-        document.getElementById("searchActButton").click();
+        // Reload panels
         document.getElementById("searchDenButton").click();
-        document.getElementById("searchAllButton").click();
     }
 
     // swap panel to all trips
@@ -83,10 +74,7 @@ function NavBar() {
         document.getElementById("DeniedPanel").style.display = "none";
         document.getElementById("AllPanel").style.display = "block";
 
-        // Reload all panels
-        document.getElementById("searchPenButton").click();
-        document.getElementById("searchActButton").click();
-        document.getElementById("searchDenButton").click();
+        // Reload panels
         document.getElementById("searchAllButton").click();
     }
 

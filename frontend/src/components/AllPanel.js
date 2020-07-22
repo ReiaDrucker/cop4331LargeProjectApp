@@ -163,7 +163,7 @@ function AllPanel() {
                 // ACTIVE
                 if (isApproved === true && isNew === true) {
                     // make new button for the collapsible component, and give it an ID that corresponds to the ID # of the trip request in the database ("#-coll")
-                    collButton.innerHTML = "APPROVED: " + uID + "'s Trip to " + loc2;
+                    collButton.innerHTML = "APPROVED: Trip to " + loc2;
                     collButton.id = ID + "-coll";
                     collButton.className = "collapsible";
 
@@ -179,7 +179,7 @@ function AllPanel() {
                     // fill <p>s with content from json
                     currentLocP.innerHTML = "Current Location: " + loc1;
                     departTimeP.innerHTML = "Depart Time: " + departTime;
-                    reasonP.innerHTML = "Reason For Trip: " + reason;
+                    reasonP.innerHTML = "Comments: " + reasonDen;
 
                     // add the <p>s to the content div
                     contentDiv.appendChild(currentLocP);
@@ -217,7 +217,7 @@ function AllPanel() {
                 // DENIED
                 if (isApproved === false && isNew === false) {
                     // make new button for the collapsible component, and give it an ID that corresponds to the ID # of the trip request in the database ("#-coll")
-                    collButton.innerHTML = "DENIED: " + uID + "'s Trip to " + loc2;
+                    collButton.innerHTML = "DENIED: Trip to " + loc2;
                     collButton.id = ID + "-coll";
                     collButton.className = "collapsible";
 
@@ -399,7 +399,7 @@ function AllPanel() {
                 // ACTIVE
                 if (isApproved === true && isNew === true) {
                     // make new button for the collapsible component, and give it an ID that corresponds to the ID # of the trip request in the database ("#-coll")
-                    collButton.innerHTML = "APPROVED: " + uID + "'s Trip to " + loc2
+                    collButton.innerHTML = "APPROVED: Trip to " + loc2
                     collButton.id = ID + "-coll";
                     collButton.className = "collapsible";
 
@@ -415,7 +415,7 @@ function AllPanel() {
                     // fill <p>s with content from json
                     currentLocP.innerHTML = "Current Location: " + loc1;
                     departTimeP.innerHTML = "Depart Time: " + departTime;
-                    reasonP.innerHTML = "Reason For Trip: " + reason;
+                    reasonP.innerHTML = "Comments: " + reasonDen;
 
                     // add the <p>s to the content div
                     contentDiv.appendChild(currentLocP);
@@ -453,7 +453,7 @@ function AllPanel() {
                 // DENIED
                 if (isApproved === false && isNew === false) {
                     // make new button for the collapsible component, and give it an ID that corresponds to the ID # of the trip request in the database ("#-coll")
-                    collButton.innerHTML = "DENIED: " + uID + "'s Trip to " + loc2;
+                    collButton.innerHTML = "DENIED: Trip to " + loc2;
                     collButton.id = ID + "-coll";
                     collButton.className = "collapsible";
 
