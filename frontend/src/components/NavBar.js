@@ -12,6 +12,8 @@ function NavBar() {
         // document.getElementById("FinishedPanel").style.display = "none";
         document.getElementById("DeniedPanel").style.display = "none";
         document.getElementById("AllPanel").style.display = "none";
+
+        window.location.reload();
     }
 
     // swap panel to active trips
@@ -25,6 +27,8 @@ function NavBar() {
         // document.getElementById("FinishedPanel").style.display = "none";
         document.getElementById("DeniedPanel").style.display = "none";
         document.getElementById("AllPanel").style.display = "none";
+
+        window.location.reload();
     }
 
     // // swap panel to finished trips
@@ -51,6 +55,8 @@ function NavBar() {
         // document.getElementById("FinishedPanel").style.display = "none";
         document.getElementById("DeniedPanel").style.display = "block";
         document.getElementById("AllPanel").style.display = "none";
+
+        window.location.reload();
     }
 
     // swap panel to all trips
@@ -64,6 +70,8 @@ function NavBar() {
         // document.getElementById("FinishedPanel").style.display = "none";
         document.getElementById("DeniedPanel").style.display = "none";
         document.getElementById("AllPanel").style.display = "block";
+
+        window.location.reload();
     }
 
 
