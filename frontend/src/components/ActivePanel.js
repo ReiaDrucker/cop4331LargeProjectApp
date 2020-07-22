@@ -90,10 +90,11 @@ function ActivePanel() {
                 var departTime = res[i].startTime;
                 var reason = res[i].purpose;
                 var weather = res[i].weather;
+                var comments = res[i].comments;
 
                 // make new button for the collapsible component, and give it an ID that corresponds to the ID # of the trip request in the database ("#-coll")
                 var collButton = document.createElement("button");
-                collButton.innerHTML = "ACTIVE: " + uID + "'s Trip to " + loc2;
+                collButton.innerHTML = "APPROVED: Trip to " + loc2;
                 collButton.id = ID + "-coll";
                 collButton.className = "collapsible";
 
@@ -105,17 +106,17 @@ function ActivePanel() {
                 // create the <p> for the content div
                 var currentLocP = document.createElement("p");
                 var departTimeP = document.createElement("p");
-                var reasonP = document.createElement("p");
+                var commentsP = document.createElement("p");
 
                 // fill <p>s with content from json
                 currentLocP.innerHTML = "Current Location: " + loc1;
                 departTimeP.innerHTML = "Depart Time: " + departTime;
-                reasonP.innerHTML = "Reason For Trip: " + reason;
+                commentsP.innerHTML = "Comments: " + comments;
 
                 // add the <p>s to the content div
                 contentDiv.appendChild(currentLocP);
                 contentDiv.appendChild(departTimeP);
-                contentDiv.appendChild(reasonP);
+                contentDiv.appendChild(commentsP);
 
                 // add collButton and contentDiv to TripList
                 document.getElementById("ActTripList").appendChild(collButton);
@@ -196,7 +197,7 @@ function ActivePanel() {
                 }
 
                 // TODO - add search by search var, and possibly add multiple types of searches~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                if (search !== "" && res2.userName.indexOf(search.value) === -1) {
+                if (search !== "" && res[i].destination.indexOf(search.value) === -1) {
                     continue;
                 }
 
@@ -208,10 +209,11 @@ function ActivePanel() {
                 var departTime = res[i].startTime;
                 var reason = res[i].purpose;
                 var weather = res[i].weather;
+                var comments = res[i].comments;
 
                 // make new button for the collapsible component, and give it an ID that corresponds to the ID # of the trip request in the database ("#-coll")
                 var collButton = document.createElement("button");
-                collButton.innerHTML = "ACTIVE: " + uID + "'s Trip to " + loc2;
+                collButton.innerHTML = "APPROVED: Trip to " + loc2;
                 collButton.id = ID + "-coll";
                 collButton.className = "collapsible";
 
@@ -223,17 +225,17 @@ function ActivePanel() {
                 // create the <p> for the content div
                 var currentLocP = document.createElement("p");
                 var departTimeP = document.createElement("p");
-                var reasonP = document.createElement("p");
+                var commentsP = document.createElement("p");
 
                 // fill <p>s with content from json
                 currentLocP.innerHTML = "Current Location: " + loc1;
                 departTimeP.innerHTML = "Depart Time: " + departTime;
-                reasonP.innerHTML = "Reason For Trip: " + reason;
+                commentsP.innerHTML = "Comments: " + comments;
 
                 // add the <p>s to the content div
                 contentDiv.appendChild(currentLocP);
                 contentDiv.appendChild(departTimeP);
-                contentDiv.appendChild(reasonP);
+                contentDiv.appendChild(commentsP);
 
                 // add collButton and contentDiv to TripList
                 document.getElementById("ActTripList").appendChild(collButton);

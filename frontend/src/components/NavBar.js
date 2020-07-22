@@ -18,7 +18,7 @@ function NavBar() {
     const gotoActive = event => {
         event.preventDefault();
 
-        document.getElementById("subTitle").innerHTML = "Active Trips";
+        document.getElementById("subTitle").innerHTML = "Approved Trips";
 
         document.getElementById("PendingPanel").style.display = "none";
         document.getElementById("ActivePanel").style.display = "block";
@@ -73,7 +73,7 @@ function NavBar() {
             <div id="NavBarHolder">
                 <div id="NavBar" class="topnav">
                     <button type="button" id="pendingButton" class="navButtons" onClick={gotoPending}> Pending Trips </button>
-                    <button type="button" id="activeButton" class="navButtons" onClick={gotoActive}> Active Trips</button>
+                    <button type="button" id="activeButton" class="navButtons" onClick={gotoActive}> Approved Trips</button>
                     <button type="button" id="activeButton" class="navButtons" onClick={gotoDenied}> Denied Trips</button>
                     <button type="button" id="activeButton" class="navButtons" onClick={gotoAll}> All Trips</button>
                 </div>

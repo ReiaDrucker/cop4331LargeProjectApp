@@ -110,19 +110,16 @@ function PendingPanel() {
                 contentDiv.className = "content";
 
                 // create the <p> for the content div
-                var clientP = document.createElement("p");
                 var weatherP = document.createElement("p");
                 var departTimeP = document.createElement("p");
                 var reasonP = document.createElement("p");
 
                 // fill <p>s with content from json
-                clientP.innerHTML = "Request From: " + uID;
                 weatherP.innerHTML = "Weather Conditions: " + weather;
                 departTimeP.innerHTML = "Depart Time: " + departTime;
                 reasonP.innerHTML = "Reason For Trip: " + reason;
 
                 // add the <p>s to the content div
-                contentDiv.appendChild(clientP);
                 contentDiv.appendChild(weatherP);
                 contentDiv.appendChild(departTimeP);
                 contentDiv.appendChild(reasonP);
@@ -204,8 +201,8 @@ function PendingPanel() {
                     alert(e.toString());
                 }
 
-                // TODO - currently searching by username, possibly add multiple types of searches~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                if (search !== "" && res2.userName.indexOf(search.value) === -1) {
+                // TODO - currently searching by destination, possibly add multiple types of searches~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                if (search !== "" && res[i].destination.indexOf(search.value) === -1) {
                     continue;
                 }
 
@@ -233,19 +230,16 @@ function PendingPanel() {
                 contentDiv.className = "content";
 
                 // create the <p> for the content div
-                var clientP = document.createElement("p");
                 var weatherP = document.createElement("p");
                 var departTimeP = document.createElement("p");
                 var reasonP = document.createElement("p");
 
                 // fill <p>s with content from json
-                clientP.innerHTML = "Request From: " + uID;
                 weatherP.innerHTML = "Weather Conditions: " + weather;
                 departTimeP.innerHTML = "Depart Time: " + departTime;
                 reasonP.innerHTML = "Reason For Trip: " + reason;
 
                 // add the <p>s to the content div
-                contentDiv.appendChild(clientP);
                 contentDiv.appendChild(weatherP);
                 contentDiv.appendChild(departTimeP);
                 contentDiv.appendChild(reasonP);
