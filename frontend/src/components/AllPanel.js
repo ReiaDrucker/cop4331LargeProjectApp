@@ -114,46 +114,19 @@ function AllPanel() {
                     contentDiv.className = "content";
 
                     // create the <p> for the content div
-                    var clientP = document.createElement("p");
                     var weatherP = document.createElement("p");
                     var departTimeP = document.createElement("p");
                     var reasonP = document.createElement("p");
 
                     // fill <p>s with content from json
-                    clientP.innerHTML = "Request From: " + uID;
                     weatherP.innerHTML = "Weather Conditions: " + weather;
                     departTimeP.innerHTML = "Depart Time: " + departTime;
                     reasonP.innerHTML = "Reason For Trip: " + reason;
 
                     // add the <p>s to the content div
-                    contentDiv.appendChild(clientP);
                     contentDiv.appendChild(weatherP);
                     contentDiv.appendChild(departTimeP);
                     contentDiv.appendChild(reasonP);
-
-                    // add respond button to get to deny / accept panel                
-                    var resButton = document.createElement("button");
-                    resButton.type = "button";
-                    resButton.id = ID;
-                    resButton.className = "buttons";
-                    resButton.innerHTML = "Respond to request";
-                    resButton.addEventListener("click", function (e) {
-                        // save id of trip to edit
-                        var idInfo = { idToEdit: e.currentTarget.id, uID: userIDNUM, aID: adminIDNUM }  // TODO - SHOULD BE TEMP (uID and aID)
-                        // alert(JSON.stringify(idInfo));
-                        localStorage.setItem('trip_edit_data', JSON.stringify(idInfo));
-
-                        // swap view to respond panel
-                        document.getElementById("RespondPanel").style.display = "block";
-                        document.getElementById("AllPanel").style.display = "none";
-
-                        // hide navbar
-                        document.getElementById("NavWrapper").style.display = "none";
-                    });
-
-                    // add respond button to content div
-                    contentDiv.appendChild(document.createElement("br"));
-                    contentDiv.appendChild(resButton);
 
                     // add collButton and contentDiv to TripList
                     document.getElementById("AllTripList").appendChild(collButton);
@@ -350,46 +323,19 @@ function AllPanel() {
                     contentDiv.className = "content";
 
                     // create the <p> for the content div
-                    var clientP = document.createElement("p");
                     var weatherP = document.createElement("p");
                     var departTimeP = document.createElement("p");
                     var reasonP = document.createElement("p");
 
                     // fill <p>s with content from json
-                    clientP.innerHTML = "Request From: " + uID;
                     weatherP.innerHTML = "Weather Conditions: " + weather;
                     departTimeP.innerHTML = "Depart Time: " + departTime;
                     reasonP.innerHTML = "Reason For Trip: " + reason;
 
                     // add the <p>s to the content div
-                    contentDiv.appendChild(clientP);
                     contentDiv.appendChild(weatherP);
                     contentDiv.appendChild(departTimeP);
                     contentDiv.appendChild(reasonP);
-
-                    // add respond button to get to deny / accept panel                
-                    var resButton = document.createElement("button");
-                    resButton.type = "button";
-                    resButton.id = ID;
-                    resButton.className = "buttons";
-                    resButton.innerHTML = "Respond to request";
-                    resButton.addEventListener("click", function (e) {
-                        // save id of trip to edit
-                        var idInfo = { idToEdit: e.currentTarget.id, uID: userIDNUM, aID: adminIDNUM }  // TODO - SHOULD BE TEMP (uID and aID)
-                        // alert(JSON.stringify(idInfo));
-                        localStorage.setItem('trip_edit_data', JSON.stringify(idInfo));
-
-                        // swap view to respond panel
-                        document.getElementById("RespondPanel").style.display = "block";
-                        document.getElementById("AllPanel").style.display = "none";
-
-                        // hide navbar
-                        document.getElementById("NavWrapper").style.display = "none";
-                    });
-
-                    // add respond button to content div
-                    contentDiv.appendChild(document.createElement("br"));
-                    contentDiv.appendChild(resButton);
 
                     // add collButton and contentDiv to TripList
                     document.getElementById("AllTripList").appendChild(collButton);
